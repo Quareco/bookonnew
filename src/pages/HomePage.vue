@@ -1,6 +1,13 @@
 <template>
     <q-page>
-        <h1>Teste</h1>
+        <h1>Aqui vai a imagem do bookon</h1>
+
+        <q-input outlined v-model="text" label="Login" />
+
+        <q-input outlined v-model="text" label="Senha" />
+
+         <q-btn color="primary" label="Login" />
+
     </q-page>
 </template>
 
