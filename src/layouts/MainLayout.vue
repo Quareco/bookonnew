@@ -12,10 +12,22 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          BookOn
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Seja bem vindo Carlos
+
+        <a href="http://localhost:8080/#/perfil">
+
+          <q-avatar>
+
+            <img src="https://cdn.quasar.dev/img/avatar.png"/>
+
+          </q-avatar>
+
+        </a>
+
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -28,7 +40,7 @@
         <q-item-label
           header
         >
-          Essential Links
+          Menu
         </q-item-label>
 
         <EssentialLink
@@ -54,7 +66,8 @@ const linksList = [
     title: 'Login',
     caption: 'Book.Login',
     icon: 'school',
-    link: 'http://localhost:8080/#/home',
+    link: 'http://localhost:8080/#/login'
+
   }
 
 ]

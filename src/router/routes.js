@@ -10,7 +10,9 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },
-      { path: '/home', component: () => import('pages/HomePage.vue') }
+      { path: '/login', component: () => import('pages/LoginPage.vue') },
+      { path: '/cad', component: () => import('pages/CadastroPage.vue')},
+      { path: '/perfil', component: () => import('pages/PerfilPage.vue')}
     ]
   },
 
