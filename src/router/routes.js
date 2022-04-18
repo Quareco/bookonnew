@@ -12,7 +12,8 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: '/login', component: () => import('pages/LoginPage.vue') },
       { path: '/cad', component: () => import('pages/CadastroPage.vue')},
-      { path: '/perfil', component: () => import('pages/PerfilPage.vue')}
+      { path: '/perfil', component: () => import('pages/PerfilPage.vue')},
+      { path: '/config', component: () => import('pages/ConfigPage.vue')}
     ]
   },
 

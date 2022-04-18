@@ -68,8 +68,23 @@ const linksList = [
     icon: 'school',
     link: 'http://localhost:8080/#/login'
 
-  }
+  },
 
+  {
+    title: 'Configurações',
+    caption: 'Book.Config',
+    icon: 'more_horiz',
+    link: 'http://localhost:8080/#/config'
+
+  },
+
+  {
+    title: 'Home',
+    caption: 'Book.home',
+    icon: 'home',
+    link: 'http://localhost:8080/#/'
+
+  },
 ]
 
 export default defineComponent({
