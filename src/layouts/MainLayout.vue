@@ -33,7 +33,6 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
       bordered
     >
       <q-list>
@@ -50,6 +49,33 @@
         />
       </q-list>
     </q-drawer>
+
+    <q-drawer
+      side="right"
+      v-model="rightDrawerOpen"
+      bordered
+    >
+      <q-list>
+        <q-item-label
+          header
+        >
+          Amigos
+        </q-item-label>
+
+      </q-list>
+    </q-drawer>
+
+      <q-footer elevated>
+        <q-toolbar>
+          <q-btn
+            class="absolute-bottom-right"
+            color="warning"
+            round
+            icon="group"
+            @click="toggleRightDrawer"
+          />      
+        </q-toolbar>
+      </q-footer>
 
     <q-page-container>
       <router-view />
@@ -96,14 +122,19 @@ export default defineComponent({
 
   setup () {
     const leftDrawerOpen = ref(false)
+    const rightDrawerOpen = ref(false)
 
     return {
       essentialLinks: linksList,
       leftDrawerOpen,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
+      },
+      rightDrawerOpen,
+      toggleRightDrawer () {
+        rightDrawerOpen.value = !rightDrawerOpen.value
       }
-    }
+    }    
   }
 })
 </script>
