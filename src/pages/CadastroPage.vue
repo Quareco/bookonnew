@@ -14,7 +14,7 @@
 
         <q-input outlined v-model="text" label="Confirme a sua senha" />
 
-        <q-checkbox v-model="right" label="Você tem mais de 18 anos?"/>
+        <q-checkbox v-model="caixa" label="Você tem mais de 18 anos?"/>
 
         <q-btn label="Cadastrar" type="submit" color="primary"/>
 
@@ -25,9 +25,20 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-  name: 'LoginPage'
+  name: 'LoginPage',
+
+    setup () {
+
+    return {
+
+      caixa: ref(false)
+
+    }
+
+  }
+
 })
 </script>
