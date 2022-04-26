@@ -2,7 +2,9 @@
   <q-page class="flex flex-center">
 
       <h1>O que vamos estudar hoje?</h1>
-      <p id="batatinha"></p>
+      <p id="batatinha" :onload='carregaDados()'>{{teste}}</p>
+
+
 
   </q-page>
 </template>
@@ -27,11 +29,18 @@ export default defineComponent({
     const { list } = postService();
   },
 
+  methods: {
+     carregaDados: function() {
+  
+      }
+  },
+
   mounted () {
     this.$axios.get('http://localhost:3000/usuario')
-      .then(function (res) {
-        console.log('response', res.data[0])
-        this.teste = res.data[0];
+      .then((res) => {
+        const dataNome = res.data[0].nome
+        console.log('data', dataNome) 
+        this.teste = dataNome       
       })
   },
 
