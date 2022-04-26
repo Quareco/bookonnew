@@ -1,8 +1,34 @@
 <template>
   <q-page class="flex flex-center">
 
-      <h1>O que vamos estudar hoje?</h1>
-      <p id="batatinha"></p>
+    <q-list>
+
+      <q-item>
+
+        <h1>O que vamos estudar hoje?</h1>
+        <p id="batatinha"></p>
+
+      </q-item>
+
+      <q-item>
+
+        <q-item-section>
+
+          <q-avatar>
+
+            <img src="https://cdn.quasar.dev/img/avatar.png">
+
+          </q-avatar>
+
+        </q-item-section>
+
+        <q-item-section>
+           <P> {{usuario.nome}} </P>
+        </q-item-section>
+
+      </q-item>
+
+    </q-list>
 
   </q-page>
 </template>
@@ -14,34 +40,26 @@ import postService from 'src/FuncoesJson/services'
 export default defineComponent({
   name: 'IndexPage',
 
-  setup (){
-
-    const { list } = postService();
-
-    onMounted(() => {
-
-      getPosts()
-
-    });
-
-    const getPosts = async () => {
-
-      try{
-
-        const { data } = await list()
-
-        batatinha.textContent = JSON.stringify(data)
-
-      } catch (error){
-
-        console.error(error)
-
+  data() {
+    return {
+      usuario: {
+        nome: ''
+        },
+      teste: '',
       }
+  },
 
-    }
+  setup (){
+    const { list } = postService();
+  },
 
-
-  }
+  mounted () {
+    this.$axios.get('http://localhost:3000/usuario')
+      .then(function (res) {
+        console.log('response', res.data[0])
+        this.teste = res.data[0];
+      })
+  },
 
 })
 </script>
