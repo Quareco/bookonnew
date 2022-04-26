@@ -73,7 +73,7 @@
             round
             icon="group"
             @click="toggleRightDrawer"
-          />      
+          />
         </q-toolbar>
       </q-footer>
 
@@ -134,7 +134,7 @@ export default defineComponent({
       toggleRightDrawer () {
         rightDrawerOpen.value = !rightDrawerOpen.value
       }
-    }    
+    }
   }
 })
 </script>
