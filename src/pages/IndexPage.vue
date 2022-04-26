@@ -1,34 +1,8 @@
 <template>
   <q-page class="flex flex-center">
 
-    <q-list>
-
-      <q-item>
-
-        <h1>O que vamos estudar hoje?</h1>
-        <p id="batatinha"></p>
-
-      </q-item>
-
-      <q-item>
-
-        <q-item-section>
-
-          <q-avatar>
-
-            <img src="https://cdn.quasar.dev/img/avatar.png">
-
-          </q-avatar>
-
-        </q-item-section>
-
-        <q-item-section>
-           <P> {{usuario.nome}} </P>
-        </q-item-section>
-
-      </q-item>
-
-    </q-list>
+      <h1>O que vamos estudar hoje?</h1>
+      <p id="batatinha"></p>
 
   </q-page>
 </template>
