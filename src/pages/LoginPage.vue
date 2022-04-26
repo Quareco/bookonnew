@@ -5,11 +5,11 @@
       </div>
         <h1>Seja Bem-Vindo</h1>
 
-        <q-input outlined v-model="text" label="Login" />
+        <q-input outlined v-model="text" label="Login: Email ou Usuário" />
 
         <div>
 
-        <q-input outlined v-model="text" label="Senha" />
+        <q-input outlined v-model="password" type="password" label="Senha" />
 
         </div>
 
