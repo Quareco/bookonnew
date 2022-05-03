@@ -67,13 +67,14 @@
 
       <q-footer elevated>
         <q-toolbar>
-          <q-btn
-            class="absolute-bottom-right"
-            color="warning"
-            round
-            icon="group"
-            @click="toggleRightDrawer"
-          />      
+            <div class="q-pa-md q-gutter-sm">
+              <q-btn
+              class="absolute-bottom-right"
+              color="warning"
+              round
+              icon="group"
+              @click="show()" />
+          </div>
         </q-toolbar>
       </q-footer>
 
@@ -86,6 +87,9 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
+import { useQuasar } from 'quasar'
+
+
 
 const linksList = [
   {
@@ -116,6 +120,15 @@ const linksList = [
 export default defineComponent({
   name: 'MainLayout',
 
+  data() {
+    return {
+      usuario: {
+        nome: ''
+        },
+      teste: '',
+      }
+  },
+
   components: {
     EssentialLink
   },
@@ -124,7 +137,30 @@ export default defineComponent({
     const leftDrawerOpen = ref(false)
     const rightDrawerOpen = ref(false)
 
+    const $q = useQuasar()
+
+    function show (grid) {
+      $q.bottomSheet({
+        message: 'Bottom Sheet message',
+        grid,
+        actions: [
+          {
+            label: 'John',
+            avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+            id: 'john'
+          }
+        ]
+      }).onOk(action => {
+        // console.log('Action chosen:', action.id)
+      }).onCancel(() => {
+        // console.log('Dismissed')
+      }).onDismiss(() => {
+        // console.log('I am triggered on both OK and Cancel')
+      })
+    }
+
     return {
+      show,
       essentialLinks: linksList,
       leftDrawerOpen,
       toggleLeftDrawer () {
@@ -134,7 +170,25 @@ export default defineComponent({
       toggleRightDrawer () {
         rightDrawerOpen.value = !rightDrawerOpen.value
       }
-    }    
-  }
+    }
+    
+  },
+
+   mounted () {
+    this.$axios.get('http://localhost:3000/usuario')
+      .then((res) => {
+        const dataNome = res.data[0].nome
+        console.log('ta indo', dataNome) 
+        this.teste = dataNome       
+      })
+  },
+
+  // methods: {
+  //    carregaDados: function() {
+  
+  //     }
+  // },
+
+
 })
 </script>
