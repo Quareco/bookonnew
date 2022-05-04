@@ -21,6 +21,42 @@
 
             </template>
             </q-input>
+
+
+          
+            <div class="q-gutter-y-md column" style="max-width: 2000px">
+
+    
+      
+
+
+      <q-input outlined v-model="text" label="Nome Completo" stack-label :dense="dense" />
+
+
+        <q-input v-model="email" outlined type="email" label="Email" stack-label :dense="dense"/>
+
+
+            <q-input v-model="date" outlined type="date" hint="Data de Nascimento" />
+
+            <q-select outlined v-model="model" :options="options" label="Gênero" />
+
+
+
+
+      <q-input
+        outlined
+        v-model="phone"
+        label="Telefone"
+        mask="(##) ##### - ####"
+        fill-mask
+        
+      />
+
+      
+
+     
+  
+    </div>
         
         <q-checkbox v-model="caixa" label="Você tem mais de 18 anos?"/>
 
@@ -48,7 +84,12 @@ export default defineComponent({
 
     return {
 
-      caixa: ref(false)
+      caixa: ref(false),
+
+      model: ref(null),
+      options: [
+        'Masculino', 'Feminino'
+      ]
 
     }
 
