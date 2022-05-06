@@ -96,7 +96,7 @@ const linksList = [
     title: 'Login',
     caption: 'Book.Login',
     icon: 'school',
-    link: 'http://localhost:8080/#/login'
+    link: '#/login'
 
   },
 
@@ -171,21 +171,21 @@ export default defineComponent({
         rightDrawerOpen.value = !rightDrawerOpen.value
       }
     }
-    
+
   },
 
    mounted () {
     this.$axios.get('http://localhost:3000/usuario')
       .then((res) => {
         const dataNome = res.data[0].nome
-        console.log('ta indo', dataNome) 
-        this.teste = dataNome       
+        console.log('ta indo', dataNome)
+        this.teste = dataNome
       })
   },
 
   // methods: {
   //    carregaDados: function() {
-  
+
   //     }
   // },
 
