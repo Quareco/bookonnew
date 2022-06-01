@@ -61,7 +61,7 @@
 
             <q-item-section>
               <q-avatar>
-                  <img :src="`{feed.foto}`">
+                  <img :src="feed.foto">
               </q-avatar>
             </q-item-section>
 

@@ -6,7 +6,7 @@
         <h1>Seja Bem-Vindo</h1>
 
         <q-input outlined v-model="text" label="Login: Email ou Usuário" />
-
+        <br>
         <div>
 
         <q-input outlined v-model="password" type="password" label="Senha" />
@@ -14,11 +14,11 @@
         </div>
 
         <div>
-
+        <br>
         <q-btn label="Logar" type="submit" color="primary"/>
 
         </div>
-
+        <br>
         <a href="http://localhost:8080/#/cad" >Não tem uma conta ainda? Se cadastre aqui</a>
 
     </q-page>
@@ -52,10 +52,19 @@ p {
 
 .q-input{
   background-color: #ffffff;
+  border-radius: 50px;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .q-btn{
   border-radius: 10px;
+  width: 25%;
+  margin-left: 37%;
+}
+
+a{
+  margin-left: 23%;
 }
 
 

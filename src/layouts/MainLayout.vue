@@ -21,7 +21,7 @@
 
           <q-avatar>
 
-            <img src="https://cdn.quasar.dev/img/avatar.png"/>
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png"/>
 
           </q-avatar>
 
@@ -50,20 +50,64 @@
       </q-list>
     </q-drawer>
 
-    <q-drawer
-      side="right"
-      v-model="rightDrawerOpen"
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Amigos
-        </q-item-label>
+    <q-dialog
+      v-model="showDialog"
+      persistent >
+      <q-card>
 
-      </q-list>
-    </q-drawer>
+        <q-toolbar class="bg-primary text-white">
+
+          <q-toolbar-title>
+            amigos
+          </q-toolbar-title>
+
+          <q-btn flat icon="close"
+          round
+          v-close-popup />
+
+        </q-toolbar>
+
+        <q-card-section>
+
+          <!-- <q-avatar>
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png"/>
+          </q-avatar>
+
+          pablo -->
+
+            <q-item v-for="feed in feeds" :key="feed.id" clickable >
+
+            <q-item-section>
+              <q-avatar>
+                  <img :src="feed.foto">
+              </q-avatar>
+            </q-item-section>
+
+            <q-item-section>
+              <q-item-label class="bg-cyan-1"><b> {{feed.nome}} </b></q-item-label>
+              <p class="bg-cyan-1"><b> Descrição: </b>{{feed.texto}}</p>
+
+            </q-item-section>
+
+            <q-item-section>
+
+              <a href="http://localhost:8080/#/chat" class="text-green">
+                <q-btn
+                class="bg-green text-white"
+                icon="chat"
+                rounded
+                flat />
+              </a>
+
+            </q-item-section>
+
+            </q-item>
+
+        </q-card-section>
+
+      </q-card>
+
+    </q-dialog>
 
       <q-footer elevated>
         <q-toolbar>
@@ -73,7 +117,7 @@
               color="warning"
               round
               icon="group"
-              @click="show()" />
+              @click="showDialog = true" />
           </div>
         </q-toolbar>
       </q-footer>
@@ -88,8 +132,27 @@
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 import { useQuasar } from 'quasar'
+import postService from 'src/FuncoesJson/services'
+
+const feeds = [{
+
+  id: 1,
+  nome: "Pailhares",
+  foto: "https://cdn.quasar.dev/img/boy-avatar.png",
+  texto:"Quero ver você passar a minha pontuação"
+
+}, {
+
+  id: 2,
+  nome: "Caio",
+  foto:"https://cdn.quasar.dev/img/boy-avatar.png",
+  texto:"ababababab"
+
+},
 
 
+
+]
 
 const linksList = [
   {
@@ -115,6 +178,14 @@ const linksList = [
     link: 'http://localhost:8080/#/'
 
   },
+
+  {
+    title: 'Chat',
+    caption: 'Book.chat',
+    icon: 'chat',
+    link: 'http://localhost:8080/#/chat'
+
+  },
 ]
 
 export default defineComponent({
@@ -126,6 +197,7 @@ export default defineComponent({
         nome: ''
         },
       teste: '',
+        showDialog: false,
       }
   },
 
@@ -136,6 +208,8 @@ export default defineComponent({
   setup () {
     const leftDrawerOpen = ref(false)
     const rightDrawerOpen = ref(false)
+    const { list } = postService();
+
 
     const $q = useQuasar()
 
@@ -169,16 +243,23 @@ export default defineComponent({
       rightDrawerOpen,
       toggleRightDrawer () {
         rightDrawerOpen.value = !rightDrawerOpen.value
-      }
+      },
+      feeds
     }
 
   },
 
-   mounted () {
+   methods: {
+     carregaDados: function() {
+
+      }
+  },
+
+  mounted () {
     this.$axios.get('http://localhost:3000/usuario')
       .then((res) => {
         const dataNome = res.data[0].nome
-        console.log('ta indo', dataNome)
+        console.log('data', dataNome)
         this.teste = dataNome
       })
   },

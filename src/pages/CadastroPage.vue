@@ -4,15 +4,28 @@
 
     <q-page>
 
-        <h1>Vamos brincar</h1>
+        <h1>Vamos ao Cadastro</h1>
 
-        <q-input outlined v-model="text" label="Digite o seu email" />
+        <q-input outlined v-model="email" type="email" label="Digite o seu email" stack-label :dense="dense" />
+
+        <br>
+
+        <q-input v-model="email" outlined type="email" label="Confirme o seu email" stack-label :dense="dense"/>
+
+        <br>
 
         <q-input outlined v-model="text" label="Digite o seu nick" />
 
+        <br>
+
         <q-input outlined v-model="password" type="password" label="Digite a sua senha" />
 
+        <br>
+
         <q-input outlined  v-model="password" type="password" label="Confirme a sua senha">
+
+        <br>
+
 <template v-slot:append>
           <q-icon
             :name="isPwd ? 'visibility_off' : 'visibility'"
@@ -23,20 +36,20 @@
             </q-input>
 
 
-          
+
             <div class="q-gutter-y-md column" style="max-width: 2000px">
 
-    
-      
+
+      <br>
 
 
       <q-input outlined v-model="text" label="Nome Completo" stack-label :dense="dense" />
 
 
-        <q-input v-model="email" outlined type="email" label="Email" stack-label :dense="dense"/>
 
 
-            <q-input v-model="date" outlined type="date" hint="Data de Nascimento" />
+
+            <q-input v-model="date" outlined type="date" hint="Data de Nascimento" stack-label :dense="dense"/>
 
             <q-select outlined v-model="model" :options="options" label="Gênero" />
 
@@ -49,20 +62,24 @@
         label="Telefone"
         mask="(##) ##### - ####"
         fill-mask
-        
+
       />
 
-      
 
-     
-  
+
+
+
     </div>
-        
+
         <q-checkbox v-model="caixa" label="Você tem mais de 18 anos?"/>
 
+
+      <br>
+
         <q-btn label="Cadastrar" type="submit" color="primary"/>
-        
-        
+
+
+
         <!--<q-spinner-hourglass
           color="primary"
           size="2em"
@@ -70,6 +87,8 @@
         <q-tooltip :offset="[0, 8]">QSpinnerHourglass</q-tooltip>-->
 
     </q-page>
+
+
 
   </div>
 </template>
@@ -118,11 +137,28 @@ p {
 
 .q-input{
   background-color: #ffffff;
+  border-radius: 50px;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .q-btn{
   border-radius: 10px;
+  width: 25%;
+  margin-left: 37%;
 }
+
+.q-select{
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.q-checkbox{
+  margin-left: 15%;
+}
+
 
 
 </style>
