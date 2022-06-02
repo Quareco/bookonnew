@@ -57,10 +57,10 @@
 
           <q-list>
 
-            <q-item v-for="feed in feeds" :key="feed.id" clickable v-ripple>
+            <q-item class="porco" v-for="feed in feeds" :key="feed.id"  v-ripple>
 
             <q-item-section>
-              <q-avatar>
+              <q-avatar class="fotinha">
                   <img :src="feed.foto">
               </q-avatar>
             </q-item-section>
@@ -68,7 +68,7 @@
             <q-item-section>
               <q-item-label> {{feed.titulo}} </q-item-label>
               <p>{{feed.texto}}</p>
-              <p>Pontuação: {{feed.pontuacao}}</p>
+              <p class="pontu">Pontuação: {{feed.pontuacao}}</p>
             </q-item-section>
 
             </q-item>
@@ -171,12 +171,35 @@ h1 {
 .materias{
 
   background-color: pink;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 4%;
 
 }
 
-.feedCont{
+.porco{
 
   background-color: #ffffff;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  padding: 5%;
+  margin-bottom: 10%;
+
+}
+
+.fotinha{
+
+  font-size:120px;
+  margin-left: 15%;
+
+}
+
+.pontu{
+
+  margin-top: 8%;
+
 
 }
 

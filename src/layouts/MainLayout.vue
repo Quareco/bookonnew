@@ -51,8 +51,7 @@
     </q-drawer>
 
     <q-dialog
-      v-model="showDialog"
-      persistent >
+      v-model="showDialog" >
       <q-card>
 
         <q-toolbar class="bg-primary text-white">
@@ -78,13 +77,13 @@
             <q-item v-for="feed in feeds" :key="feed.id" clickable >
 
             <q-item-section>
-              <q-avatar>
+              <q-avatar class="fotinha1">
                   <img :src="feed.foto">
               </q-avatar>
             </q-item-section>
 
             <q-item-section>
-              <q-item-label class="bg-cyan-1"><b> {{feed.nome}} </b></q-item-label>
+              <p class="nomezinho"><b> {{feed.nome}} </b></p>
               <p class="bg-cyan-1"><b> Descrição: </b>{{feed.texto}}</p>
 
             </q-item-section>
@@ -273,3 +272,19 @@ export default defineComponent({
 
 })
 </script>
+
+<style lang="scss">
+
+  .fotinha1{
+
+    font-size:100px;
+
+  }
+
+  .nomezinho{
+
+    font-size: 25px;
+
+  }
+
+</style>
