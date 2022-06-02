@@ -11,16 +11,6 @@
 
     </q-parallax>
 
-
-
-
-
-
-
-
-
-
-
   <q-expansion-item>
         <template v-slot:header>
           <q-item-section avatar>

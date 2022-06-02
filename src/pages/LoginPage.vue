@@ -6,29 +6,50 @@
         <h1>Seja Bem-Vindo</h1>
 
         <q-input outlined v-model="text" label="Login: Email ou Usuário" />
-        <br>
+
         <div>
 
-        <q-input outlined v-model="password" type="password" label="Senha" />
+          <q-input v-model="password" filled :type="senhaLogin ? 'password' : 'text'" label="Senha" stack-label :dense="dense" >
+            <template v-slot:append>
+              <q-icon
+                :name="senhaLogin ? 'visibility_off' : 'visibility'"
+                class="cursor-pointer"
+                @click="senhaLogin = !senhaLogin"
+              />
+            </template>
+          </q-input>
+
 
         </div>
 
         <div>
-        <br>
+
         <q-btn label="Logar" type="submit" color="primary"/>
 
         </div>
-        <br>
+
         <a href="http://localhost:8080/#/cad" >Não tem uma conta ainda? Se cadastre aqui</a>
 
     </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-  name: 'HomePage'
+  name: 'HomePage',
+
+  setup () {
+
+    return {
+
+      password: ref(''),
+      senhaLogin: ref(true),
+
+    }
+
+  }
+
 })
 </script>
 

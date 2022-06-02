@@ -84,7 +84,7 @@
 
             <q-item-section>
               <p class="nomezinho"><b> {{feed.nome}} </b></p>
-              <p class="bg-cyan-1"><b> Descrição: </b>{{feed.texto}}</p>
+              <!-- <p><b> Descrição: </b>{{feed.texto}}</p> -->
 
             </q-item-section>
 
@@ -278,12 +278,14 @@ export default defineComponent({
   .fotinha1{
 
     font-size:100px;
+    margin-right: 60px;
 
   }
 
   .nomezinho{
 
     font-size: 25px;
+    margin-right: 100px;
 
   }
 
