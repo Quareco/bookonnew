@@ -4,27 +4,40 @@
 
     <q-page>
 
-        <h1>Vamos ao Cadastro</h1>
+      <h1>Vamos ao Cadastro</h1>
 
-        <q-input outlined v-model="email" type="email" label="Digite o seu email" stack-label :dense="dense" />
+      <q-input outlined v-model="email" type="email" label="Digite o seu email" stack-label :dense="dense" />
 
-        <br>
 
-        <q-input v-model="email" outlined type="email" label="Confirme o seu email" stack-label :dense="dense"/>
+      <q-input v-model="email" outlined type="email" label="Confirme o seu email" stack-label :dense="dense"/>
 
-        <br>
 
-        <q-input outlined v-model="text" label="Digite o seu nick" />
+      <q-input outlined v-model="text" label="Digite o seu nick" />
 
-        <br>
 
-        <q-input outlined v-model="password" type="password" label="Digite a sua senha" />
+      <q-input v-model="password" filled :type="isPwd ? 'password' : 'text'" label="Digite sua senha" stack-label :dense="dense" >
+        <template v-slot:append>
+          <q-icon
+            :name="isPwd ? 'visibility_off' : 'visibility'"
+            class="cursor-pointer"
+            @click="isPwd = !isPwd"
+          />
+        </template>
+      </q-input>
 
-        <br>
 
-        <q-input outlined  v-model="password" type="password" label="Confirme a sua senha">
+      <q-input v-model="confirm_password" filled :type="isPwd2 ? 'password' : 'text'" label="Digita sua senha novamente" stack-label :dense="dense">
+        <template v-slot:append>
+          <q-icon
+            :name="isPwd2 ? 'visibility_off' : 'visibility'"
+            class="cursor-pointer"
+            @click="isPwd2 = !isPwd2"
+          />
+        </template>
+      </q-input>
 
-        <br>
+
+
 
 <template v-slot:append>
           <q-icon
@@ -33,20 +46,10 @@
             @click="isPwd = !isPwd"  />
 
             </template>
-            </q-input>
-
-
 
             <div class="q-gutter-y-md column" style="max-width: 2000px">
 
-
-      <br>
-
-
       <q-input outlined v-model="text" label="Nome Completo" stack-label :dense="dense" />
-
-
-
 
 
             <q-input v-model="date" outlined type="date" hint="Data de Nascimento" stack-label :dense="dense"/>
@@ -70,15 +73,7 @@
 
 
     </div>
-
-        <q-checkbox v-model="caixa" label="Você tem mais de 18 anos?"/>
-
-
-      <br>
-
-        <q-btn label="Cadastrar" type="submit" color="primary"/>
-
-
+        <q-btn class="cadastrar" label="Cadastrar" type="submit" color="primary"/>
 
         <!--<q-spinner-hourglass
           color="primary"
@@ -103,12 +98,15 @@ export default defineComponent({
 
     return {
 
-      caixa: ref(false),
-
       model: ref(null),
       options: [
-        'Masculino', 'Feminino'
-      ]
+        'Masculino', 'Feminino', 'Prefiro não informar',
+      ],
+
+      password: ref(''),
+      confirm_password: ref(''),
+      isPwd: ref(true),
+      isPwd2: ref(true),
 
     }
 
@@ -155,9 +153,12 @@ p {
   margin-left: 15%;
 }
 
-.q-checkbox{
-  margin-left: 15%;
+.cadastrar{
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
+
+
 
 
 
