@@ -36,11 +36,16 @@
 
 
         </template>
+<q-avatar>
+      <img src="https://cdn.quasar.dev/img/avatar.png">
+    </q-avatar>
+
+
 
         <q-card>
           <q-card-section>
             Gosto muito de aventuras e de Assistir os Jovens Titãs, Shipo muito a Ravena e o Mutano.
-            Além de Assistir Apenas um Show.
+            Além de Assistir Apenas um Show. bla blala
           </q-card-section>
         </q-card>
       </q-expansion-item>
