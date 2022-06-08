@@ -5,11 +5,10 @@
       </div>
         <h1>Seja Bem-Vindo</h1>
 
-        <q-input outlined v-model="text" label="Login: Email ou Usuário" />
+        <q-input rounded outlined v-model="text" label="Login: Email ou Usuário" />
 
         <div>
-
-          <q-input v-model="password" filled :type="senhaLogin ? 'password' : 'text'" label="Senha" stack-label :dense="dense" >
+          <q-input v-model="password" rounded outlined  :type="senhaLogin ? 'password' : 'text'" label="Senha" stack-label :dense="dense" >
             <template v-slot:append>
               <q-icon
                 :name="senhaLogin ? 'visibility_off' : 'visibility'"
