@@ -5,7 +5,7 @@
 
         <q-toolbar>
 
-          <q-toolbar-title>Configurações</q-toolbar-title>
+          <q-toolbar-title class="titulo_config">Configurações</q-toolbar-title>
 
         </q-toolbar>
 
