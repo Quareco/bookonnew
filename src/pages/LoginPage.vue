@@ -54,7 +54,7 @@ export default defineComponent({
 
 <style lang="scss">
   body {
-  background-color: #add8e6;
+  background-color: #ff9a00;
 }
 
 h1 {

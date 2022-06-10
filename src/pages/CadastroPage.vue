@@ -6,15 +6,23 @@
 
       <h1>Vamos ao Cadastro</h1>
 
+      <q-input rounded outlined v-model="text" label="Nome Completo" stack-label :dense="dense"  />
 
+      <q-input rounded outlined v-model="date" type="date" />
 
-      <q-input rounded outlined v-model="email" type="email" label="Digite o seu email" stack-label :dense="dense"  />
-
-
-      <q-input rounded outlined v-model="email" type="email" label="Confirme o seu email" stack-label :dense="dense" />
-
+      <q-select rounded outlined v-model="model" :options="options" label="Gênero" />
 
       <q-input rounded outlined v-model="text" label="Digite o seu nick" />
+
+      <q-input rounded outlined v-model="phone" label="Telefone" mask="(##) ##### - ####" fill-mask />
+
+      <q-input rounded outlined v-model="email" type="email" label="Digite o seu E-mail" stack-label :dense="dense" />
+
+
+      <q-input rounded outlined v-model="email" type="email" label="Confirme o seu E-mail" stack-label :dense="dense" />
+
+
+
 
 
       <q-input rounded outlined v-model="password" :type="isPwd ? 'password' : 'text'" label="Digite sua senha"
@@ -40,16 +48,9 @@
 
       <div class="q-gutter-y-md column" style="max-width: 2000px">
 
-        <q-input rounded outlined v-model="text" label="Nome Completo" stack-label :dense="dense" />
-
-        <q-input rounded outlined v-model="date" type="date"  />
-
-        <q-select rounded outlined v-model="model" :options="options" label="Gênero" />
-
-        <q-input rounded outlined v-model="phone" label="Telefone" mask="(##) ##### - ####" fill-mask />
 
       </div>
-      <q-btn class="cadastrar" label="Cadastrar" type="submit" color="red" />
+      <q-btn class="cadastrar" label="Cadastrar" color="red" type="submit" />
 
       <!--<q-spinner-hourglass
           color="primary"
@@ -93,7 +94,7 @@ export default defineComponent({
 
 <style lang="scss">
 body {
-  background-color: #add8e6;
+  background-color: #f6f7d7;
 }
 
 h1 {
@@ -102,6 +103,7 @@ h1 {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px 4px #000000;
+  margin-top: 5%;
 }
 
 p {
@@ -122,13 +124,16 @@ p {
   border-radius: 50px;
   width: 70%;
   margin-left: 15%;
+
 }
 
 .cadastrar {
-  margin-top: 2%;
+  margin-top: 12%;
   margin-bottom: 20%;
   border-radius: 20px;
   width: 30%;
   margin-left: 37%;
+  color: #fe175d
+
 }
 </style>

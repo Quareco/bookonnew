@@ -95,7 +95,7 @@ export default {
 
 <style lang="scss">
 body {
-  background-color: #add8e6;
+  background-color: #3fc0d3;
 }
 
 h1 {

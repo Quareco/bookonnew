@@ -30,6 +30,7 @@
             </q-item-section>
 
             <q-item-section>Exercício 4 de português - Consoantes</q-item-section>
+
           </q-item>
 
           <q-separator />
@@ -38,7 +39,7 @@
 
             <q-item-section avatar>
 
-              <q-avatar rounded color="purple" text-color="white" icon="bluetooth" />
+              <q-avatar rounded color="primary" text-color="white" icon="book" />
 
             </q-item-section>
 
@@ -91,7 +92,7 @@ import postService from 'src/FuncoesJson/services'
 const feeds = [{
 
   id: 1,
-  titulo: "Pailhares bateu um novo recorde",
+  titulo: "Palhares bateu um novo recorde",
   foto: "https://cdn.quasar.dev/img/boy-avatar.png",
   texto:"Quero ver você passar a minha pontuação",
   pontuacao: 5060
@@ -99,9 +100,9 @@ const feeds = [{
 }, {
 
   id: 2,
-  titulo: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+  titulo: "Caio Silva",
   foto:"https://cdn.quasar.dev/img/boy-avatar.png",
-  texto:"Quisque varius tellus a luctus imperdiet. Quisque elit neque, consequat id nibh eget, consequat porta massa. Nullam aliquet commodo lorem, nec volutpat.",
+  texto:"joguei pra caramba e me sai muito bem Uhuuuul.",
   pontuacao: 987941
 
 }
@@ -154,7 +155,7 @@ export default defineComponent({
 
 body {
 
-  background-color: #add8e6;
+  background-color: #fe175d;
 
 }
 
@@ -163,14 +164,14 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Comic, Helvetica, sans-serif;
   text-shadow: 2px 2px 4px #000000;
 
 }
 
 .materias{
 
-  background-color: pink;
+  background-color: #f6f7d7;
   margin-left: 6%;
   margin-right: 6%;
   padding-top: 4%;
@@ -179,7 +180,7 @@ h1 {
 
 .porco{
 
-  background-color: #ffffff;
+  background-color: #f6f7d7;
   margin-top: 50px;
   margin-left: 2%;
   margin-right: 2%;

@@ -20,7 +20,7 @@
 
             <q-list>
 
-              <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/desativar">
+              <q-item clickable v-ripple tag="a" size="15px" href="http://localhost:8080/#/desativar">
 
                 <q-item-section> <p>Desativar conta</p> </q-item-section>
 
@@ -87,7 +87,7 @@ export default defineComponent({
 <style lang="scss">
 
 body{
-  background-color: #add8e6;
+  background-color: #f6f7d7;
 }
 
 // h1 {
