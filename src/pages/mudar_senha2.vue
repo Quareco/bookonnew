@@ -6,13 +6,13 @@
 
     <p>Insira a sua nova senha</p>
 
-    <q-input filled v-model="text" label="Senha" :dense="dense" />
+    <q-input  rounded outlined v-model="text" label="Senha" :dense="dense" />
 
     <p>Insira novamente a sua senha</p>
 
-    <q-input filled v-model="text" label="Reconfirmar senha" :dense="dense" />
+    <q-input rounded outlined v-model="text" label="Reconfirmar senha" :dense="dense" />
 
-    <q-btn label="Mudar" @click="confirm = true"/>
+ <q-btn  rounded outlined label="Mudar" @click="confirm = true" type="submit" color="red" />
 
     <!-- http://localhost:8080/#/mudar_senha -->
 
@@ -22,7 +22,7 @@
       <q-card>
         <q-card-section class="row items-center">
 
-          <h3>Senha mudada com sucesso</h3>
+          <h3>Senha mudada com sucesso!</h3>
 
         </q-card-section>
       </q-card>

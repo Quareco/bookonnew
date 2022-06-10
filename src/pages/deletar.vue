@@ -6,7 +6,7 @@
 
     <p>Essa operação é irreversível, então pense bem antes de fazer isso</p>
 
-    <q-btn label="Deletar" @click="pre = true"/>
+    <q-btn label="Deletar" @click="pre = true"   type="submit" color="red"/>
 
   </div>
 
@@ -27,16 +27,28 @@
       </q-card-section>
 
       <q-card-section>
+       <q-input rounded outlined v-model="password" :type="isPwd ? 'password' : 'text'" label="Digite sua senha"
+        stack-label :dense="dense">
+        <template v-slot:append>
+          <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer" @click="isPwd = !isPwd" />
+        </template>
+      </q-input>
 
-        <q-input v-model="senha"/>
+
+
+      <template v-slot:append>
+        <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer" @click="isPwd = !isPwd" />
+
+      </template>
+
 
       </q-card-section>
 
       <q-card-section>
 
-        <q-btn label="Cancelar" v-close-popup />
+        <q-btn label="Cancelar" size="11px" v-close-popup  color="red"/>
 
-        <q-btn label="Prosseguir" @click="deleter = true"/>
+        <q-btn label="Prosseguir" size="11px" @click="deleter = true"   color="red"/>
 
       </q-card-section>
 
@@ -46,7 +58,7 @@
 
   <!-- /////////////////////////////////////////////////////// -->
 
-<q-dialog  v-model="deleter">
+<q-dialog  v-model="deleter" color="red">
 
     <q-card>
 
@@ -74,15 +86,15 @@
 
       <q-card-section>
 
-        <q-input v-model="frase"/>
+        <q-input rounded outlined v-model="frase"/>
 
       </q-card-section>
 
       <q-card-section>
 
-        <q-btn label="Cancelar" v-close-popup />
+        <q-btn label="Cancelar"  size="11px"  v-close-popup color="red" />
 
-        <q-btn label="Deletar" />
+        <q-btn type="submit" label="Deletar"  size="11px"  color="red"/>
 
       </q-card-section>
 
@@ -107,11 +119,17 @@ import { ref } from 'vue'
         pre: ref(false),
         deleter: ref(false)
 
+
+
+
+
       }
 
     }
 
   }
+
+
 
 </script>
 

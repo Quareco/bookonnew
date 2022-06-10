@@ -56,7 +56,7 @@
     <div style="margin-top:-8%; margin-left:25%;  ;  font-size:4px;">
       <h6>
         Carlos Gomes Barbosa, 22 <q-item-section side top>
-          <q-badge label="10k" />
+
         </q-item-section>
       </h6>
 

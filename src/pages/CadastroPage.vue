@@ -49,7 +49,7 @@
         <q-input rounded outlined v-model="phone" label="Telefone" mask="(##) ##### - ####" fill-mask />
 
       </div>
-      <q-btn class="cadastrar" label="Cadastrar" type="submit" color="primary" />
+      <q-btn class="cadastrar" label="Cadastrar" type="submit" color="red" />
 
       <!--<q-spinner-hourglass
           color="primary"

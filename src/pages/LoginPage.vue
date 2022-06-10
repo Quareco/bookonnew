@@ -5,7 +5,7 @@
       </div>
         <h1>Seja Bem-Vindo</h1>
 
-        <q-input rounded outlined v-model="text" label="Login: Email ou Usuário" />
+        <q-input rounded outlined v-model="text" label="E-mail ou Usuário" />
 
         <div>
           <q-input v-model="password" rounded outlined  :type="senhaLogin ? 'password' : 'text'" label="Senha" stack-label :dense="dense" >
