@@ -28,15 +28,12 @@
 
       <q-card-section>
 
-        <q-input rounded outlined v-model="password" :type="isPwd ? 'password' : 'text'" label="Digite sua senha"
+        <q-input rounded outlined v-model="senhaConfirm" :type="confirmPw ? 'password' : 'text'" label="Digite sua senha"
           stack-label :dense="dense">
           <template v-slot:append>
-            <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer" @click="isPwd = !isPwd" />
+            <q-icon :name="confirmPw ? 'visibility_off' : 'visibility'" class="cursor-pointer" @click="confirmPw = !confirmPw" />
           </template>
         </q-input>
-
-
-
 
       </q-card-section>
 
@@ -64,7 +61,9 @@ export default {
 
     return {
 
-      off: ref(false)
+      senhaConfirm: ref(''),
+      off: ref(false),
+      confirmPw: ref(true)
 
     }
 

@@ -8,6 +8,7 @@
           round
           icon="menu"
           aria-label="Menu"
+          class="menus"
           @click="toggleLeftDrawer"
         />
 
@@ -74,7 +75,7 @@
 
           pablo -->
 
-            <q-item v-for="feed in feeds" :key="feed.id" clickable >
+            <q-item v-for="feed in feeds" :key="feed.id">
 
             <q-item-section>
               <q-avatar class="fotinha1">
@@ -277,16 +278,23 @@ export default defineComponent({
 
   .fotinha1{
 
-    font-size:100px;
+    font-size:70px;
     margin-right: 60px;
 
   }
 
   .nomezinho{
 
-    font-size: 25px;
-    margin-right: 100px;
+    font-size: 23px;
+    margin-right: 120px;
+    margin-bottom: 0px;
 
   }
 
+
+  .menus{
+
+    margin-left: 5%px;
+
+  }
 </style>

@@ -66,8 +66,8 @@
             </q-item-section>
 
             <q-item-section>
-              <q-item-label> {{feed.titulo}} </q-item-label>
-              <p>{{feed.texto}}</p>
+              <q-item-label class="labelsinha"> {{feed.titulo}} </q-item-label>
+              <p class="textinho">{{feed.texto}}</p>
               <p class="pontu">Pontuação: {{feed.pontuacao}}</p>
             </q-item-section>
 
@@ -91,7 +91,7 @@ import postService from 'src/FuncoesJson/services'
 const feeds = [{
 
   id: 1,
-  titulo: "Pailhares terminou o conjunto de matemática",
+  titulo: "Pailhares bateu um novo recorde",
   foto: "https://cdn.quasar.dev/img/boy-avatar.png",
   texto:"Quero ver você passar a minha pontuação",
   pontuacao: 5060
@@ -181,8 +181,8 @@ h1 {
 
   background-color: #ffffff;
   margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
   border-radius: 10px;
   padding: 5%;
   margin-bottom: 10%;
@@ -191,15 +191,29 @@ h1 {
 
 .fotinha{
 
-  font-size:120px;
+  font-size:80px;
   margin-left: 15%;
 
 }
 
 .pontu{
 
-  margin-top: 8%;
+  margin-top: 5%;
+  font-size: 15px;
 
+
+}
+
+.labelsinha{
+
+  font-size: 16px;
+
+}
+
+.textinho{
+
+  font-size: 12px;
+  margin-top: 20px;
 
 }
 
