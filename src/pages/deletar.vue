@@ -92,9 +92,9 @@
 
       <q-card-section>
 
-        <q-btn label="Cancelar"  size="11px"  v-close-popup color="red" />
+        <q-btn class="cancelar" label="Cancelar"  size="11px"  v-close-popup color="red" />
 
-        <q-btn type="submit" label="Deletar"  size="11px"  color="red"/>
+        <q-btn class="deletar" type="submit" label="Deletar"  size="11px"  color="red"/>
 
       </q-card-section>
 

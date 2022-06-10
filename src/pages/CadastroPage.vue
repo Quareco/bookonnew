@@ -7,22 +7,33 @@
       <h1>Vamos ao Cadastro</h1>
 
       <q-input rounded outlined v-model="text" label="Nome Completo" stack-label :dense="dense"  />
+      
+      <br>
 
       <q-input rounded outlined v-model="date" type="date" />
 
+      <br>
+
       <q-select rounded outlined v-model="model" :options="options" label="Gênero" />
+
+      <br>
 
       <q-input rounded outlined v-model="text" label="Digite o seu nick" />
 
+      <br>
+
       <q-input rounded outlined v-model="phone" label="Telefone" mask="(##) ##### - ####" fill-mask />
+      
+      <br>
 
       <q-input rounded outlined v-model="email" type="email" label="Digite o seu E-mail" stack-label :dense="dense" />
 
+      <br>
 
       <q-input rounded outlined v-model="email" type="email" label="Confirme o seu E-mail" stack-label :dense="dense" />
 
 
-
+      <br>
 
 
       <q-input rounded outlined v-model="password" :type="isPwd ? 'password' : 'text'" label="Digite sua senha"
@@ -32,7 +43,8 @@
         </template>
       </q-input>
 
-
+      <br>
+      
       <q-input rounded outlined v-model="confirm_password" :type="isPwd2 ? 'password' : 'text'"
         label="Digita sua senha novamente" stack-label :dense="dense">
         <template v-slot:append>

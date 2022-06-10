@@ -90,6 +90,10 @@ body{
   background-color: #f6f7d7;
 }
 
+p{
+  font-size: 20px;
+  font-family: Arial;
+}
 // h1 {
 //   color: #ffffff;
 //   text-align: center;

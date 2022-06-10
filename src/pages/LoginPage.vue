@@ -6,7 +6,9 @@
         <h1>Seja Bem-Vindo</h1>
 
         <q-input rounded outlined v-model="text" label="E-mail ou Usuário" />
-
+        
+        <br>
+        
         <div>
           <q-input v-model="password" rounded outlined  :type="senhaLogin ? 'password' : 'text'" label="Senha" stack-label :dense="dense" >
             <template v-slot:append>
@@ -18,12 +20,11 @@
             </template>
           </q-input>
 
-
         </div>
 
         <div>
 
-        <q-btn label="Logar" type="submit" color="primary"/>
+        <q-btn class="logar" label="Logar" type="submit" color="primary"/>
 
         </div>
 
@@ -77,8 +78,9 @@ p {
   margin-left: 15%;
 }
 
-.q-btn{
-  border-radius: 10px;
+.logar{
+  margin-top: 12%;
+  border-radius: 25px;
   width: 25%;
   margin-left: 37%;
 }
