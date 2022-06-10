@@ -179,13 +179,6 @@ const linksList = [
 
   },
 
-  {
-    title: 'Chat',
-    caption: 'Book.chat',
-    icon: 'chat',
-    link: 'http://localhost:8080/#/chat'
-
-  },
 ]
 
 export default defineComponent({

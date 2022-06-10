@@ -5,7 +5,7 @@
 
       <div class="title">
 
-        <h1>O que vamos estudar hoje?</h1>
+        <h1 class="oq">O que vamos estudar hoje?</h1>
         <p id="batatinha" :onload='carregaDados()'>{{teste}}</p>
 
       </div>
@@ -14,7 +14,7 @@
 
         <q-list>
 
-          <h3>Matérias que você começou</h3>
+          <h3 class="jogado">Jogado por último</h3>
 
           <q-separator />
 
@@ -69,7 +69,7 @@
             <q-item-section>
               <q-item-label class="labelsinha"> {{feed.titulo}} </q-item-label>
               <p class="textinho">{{feed.texto}}</p>
-              <p class="pontu">Pontuação: {{feed.pontuacao}}</p>
+              <p class="pontu">Pontuação:<p class="num">{{feed.pontuacao}}</p></p>
             </q-item-section>
 
             </q-item>
@@ -102,7 +102,7 @@ const feeds = [{
   id: 2,
   titulo: "Caio Silva",
   foto:"https://cdn.quasar.dev/img/boy-avatar.png",
-  texto:"joguei pra caramba e me sai muito bem Uhuuuul.",
+  texto:"joguei pra caramba e me sai muito bem Uhuuuul",
   pontuacao: 987941
 
 }
@@ -201,6 +201,7 @@ h1 {
 
   margin-top: 5%;
   font-size: 15px;
+  font-family: titulinho2;
 
 
 }
@@ -208,13 +209,36 @@ h1 {
 .labelsinha{
 
   font-size: 16px;
+  font-family: titulinho2;
 
 }
 
 .textinho{
 
-  font-size: 12px;
+  font-size: 15px;
   margin-top: 20px;
+  font-family: titulinho1;
+
+}
+
+.oq{
+
+  font-family: redondinho;
+
+
+}
+
+.num{
+
+  font-size: 15px;
+  font-family: titulinho1;
+
+}
+
+.jogado{
+
+  font-family: titulinho1;
+  text-align: center;
 
 }
 

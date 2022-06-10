@@ -5,7 +5,7 @@
 
         <q-toolbar>
 
-          <q-toolbar-title>Configurações</q-toolbar-title>
+          <q-toolbar-title class="titulo_config">Configurações</q-toolbar-title>
 
         </q-toolbar>
 
@@ -88,6 +88,13 @@ export default defineComponent({
 
 body{
   background-color: #f6f7d7;
+}
+
+.titulo_config{
+
+  font-family:'titulinho1';
+  text-align: center;
+
 }
 
 // h1 {

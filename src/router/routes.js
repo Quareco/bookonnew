@@ -21,7 +21,6 @@ const routes = [
       { path: '/deletar', component: () => import('pages/deletar.vue')},
       { path: '/senha', component: () => import('pages/mudar_senha1.vue')},
       { path: '/mudar_senha', component: () => import('pages/mudar_senha2.vue')},
-      { path: '/chat', component: () => import('pages/chat.vue')},
       { path: '/atualizar', component: () => import('pages/atualizar.vue')},
       { path: '/portugues', component: () => import('pages/materiaPt')}
 
