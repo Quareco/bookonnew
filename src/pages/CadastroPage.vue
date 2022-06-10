@@ -8,7 +8,7 @@
 
 
 
-      <q-input rounded outlined v-model="email" type="email" label="Digite o seu email" stack-label :dense="dense" />
+      <q-input rounded outlined v-model="email" type="email" label="Digite o seu email" stack-label :dense="dense"  />
 
 
       <q-input rounded outlined v-model="email" type="email" label="Confirme o seu email" stack-label :dense="dense" />
@@ -17,7 +17,7 @@
       <q-input rounded outlined v-model="text" label="Digite o seu nick" />
 
 
-      <q-input rounded outlined v-model="password" filled :type="isPwd ? 'password' : 'text'" label="Digite sua senha"
+      <q-input rounded outlined v-model="password" :type="isPwd ? 'password' : 'text'" label="Digite sua senha"
         stack-label :dense="dense">
         <template v-slot:append>
           <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer" @click="isPwd = !isPwd" />
@@ -25,7 +25,7 @@
       </q-input>
 
 
-      <q-input rounded outlined v-model="confirm_password" filled :type="isPwd2 ? 'password' : 'text'"
+      <q-input rounded outlined v-model="confirm_password" :type="isPwd2 ? 'password' : 'text'"
         label="Digita sua senha novamente" stack-label :dense="dense">
         <template v-slot:append>
           <q-icon :name="isPwd2 ? 'visibility_off' : 'visibility'" class="cursor-pointer" @click="isPwd2 = !isPwd2" />
@@ -42,7 +42,7 @@
 
         <q-input rounded outlined v-model="text" label="Nome Completo" stack-label :dense="dense" />
 
-        <q-input rounded outlined v-model="date" type="date" hint="Data de Nascimento" stack-label :dense="dense" />
+        <q-input rounded outlined v-model="date" type="date"  />
 
         <q-select rounded outlined v-model="model" :options="options" label="Gênero" />
 
@@ -126,9 +126,9 @@ p {
 
 .cadastrar {
   margin-top: 2%;
-  margin-bottom: 3%;
-  border-radius: 10px;
-  width: 25%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+  width: 30%;
   margin-left: 37%;
 }
 </style>
