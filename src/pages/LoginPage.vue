@@ -6,9 +6,9 @@
         <h1>Seja Bem-Vindo</h1>
 
         <q-input rounded outlined v-model="text" label="E-mail ou Usuário" />
-        
+
         <br>
-        
+
         <div>
           <q-input v-model="password" rounded outlined  :type="senhaLogin ? 'password' : 'text'" label="Senha" stack-label :dense="dense" >
             <template v-slot:append>
@@ -28,7 +28,13 @@
 
         </div>
 
-        <a href="http://localhost:8080/#/cad" >Não tem uma conta ainda? Se cadastre aqui</a>
+        <div>
+
+        <q-btn to="/cad" class="cadastro" label="Não tem uma conta ainda? Se cadastre aqui" color="primary"/>
+
+        </div>
+
+       <!-- <a href="http://localhost:8080/#/cad" class="cadst" >Não tem uma conta ainda? Se cadastre aqui</a> -->
 
     </q-page>
 </template>
@@ -85,8 +91,11 @@ p {
   margin-left: 37%;
 }
 
-a{
-  margin-left: 23%;
+.cadastro{
+  margin-top: 12%;
+  border-radius: 25px;
+  width: 65%;
+  margin-left: 18%;
 }
 
 
