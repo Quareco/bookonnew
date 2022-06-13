@@ -15,32 +15,41 @@
             expand-separator
             icon="perm_identity"
             label="Conta"
+            class="continha"
 
           >
 
             <q-list>
 
+              <q-separator/>
+
               <q-item clickable v-ripple tag="a" size="15px" href="http://localhost:8080/#/desativar">
 
-                <q-item-section> <p>Desativar conta</p> </q-item-section>
+                <q-item-section> <p class="topic">Desativar conta</p> </q-item-section>
 
               </q-item>
+
+              <q-separator/>
 
               <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/deletar">
 
-                <q-item-section> <p>Deletar conta</p> </q-item-section>
+                <q-item-section> <p class="topic">Deletar conta</p> </q-item-section>
 
               </q-item>
+
+              <q-separator/>
 
               <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/senha">
 
-                <q-item-section> <p>Mudar senha</p> </q-item-section>
+                <q-item-section> <p class="topic">Mudar senha</p> </q-item-section>
 
               </q-item>
 
+              <q-separator/>
+
               <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/atualizar">
 
-                <q-item-section> <p>Atualizar dados pessoais</p> </q-item-section>
+                <q-item-section> <p class="topic">Atualizar dados pessoais</p> </q-item-section>
 
               </q-item>
 
@@ -52,21 +61,12 @@
 
           <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/sobre">
 
-            <q-item-section> <q-icon name="contact_support" /> </q-item-section>
+            <q-item-section> <q-icon class="isobre" name="contact_support" /> </q-item-section>
             <q-item-section><p> Sobre </p></q-item-section>
 
           </q-item>
 
           <q-separator/>
-
-          <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/tema">
-
-            <!-- @click="$router.replace('/tema')" -->
-
-            <q-item-section> <q-icon name="palette" /> </q-item-section>
-            <q-item-section><p> Tema </p></q-item-section>
-
-          </q-item>
 
         </q-list>
 
@@ -94,12 +94,32 @@ p{
   font-size: 20px;
   font-family: Arial;
 }
-// h1 {
-//   color: #ffffff;
-//   text-align: center;
-//   font-size: 50px;
-//   font-family: Arial, Helvetica, sans-serif;
-//   text-shadow: 2px 2px 4px #000000;
-// }
+
+.titulo_config{
+
+  font-family: titulinho2;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.topic{
+
+    font-family: titulinho1;
+
+}
+
+.continha{
+
+  font-family: titulinho2;
+  font-size: 18px;
+
+}
+
+.isobre{
+
+  font-size: 28px;
+
+}
 
 </style>

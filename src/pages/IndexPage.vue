@@ -164,7 +164,6 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
-  font-family: Comic, Helvetica, sans-serif;
   text-shadow: 2px 2px 4px #000000;
 
 }

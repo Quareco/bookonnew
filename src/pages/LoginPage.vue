@@ -3,7 +3,7 @@
       <div>
         <q-img src="../assets/bookonlogo(transparente).png"/>
       </div>
-        <h1>Seja Bem-Vindo</h1>
+        <h1 class="bem">Seja Bem-Vindo</h1>
 
         <q-input rounded outlined v-model="text" label="E-mail ou Usuário" />
 
@@ -68,8 +68,6 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 2px 4px #000000;
 }
 
 p {
@@ -98,5 +96,10 @@ p {
   margin-left: 18%;
 }
 
+.bem{
+
+  font-family: redondinho;
+
+}
 
 </style>

@@ -12,11 +12,11 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
+        <q-toolbar-title class="book">
           BookOn
         </q-toolbar-title>
 
-        <div>Seja bem vindo Carlos
+        <p class="vindo"> <div>Seja bem vindo Carlos
 
         <a href="http://localhost:8080/#/perfil">
 
@@ -29,6 +29,8 @@
         </a>
 
         </div>
+
+        </p>
       </q-toolbar>
     </q-header>
 
@@ -39,6 +41,7 @@
       <q-list>
         <q-item-label
           header
+          class="menu"
         >
           Menu
         </q-item-label>
@@ -47,6 +50,7 @@
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
+          class="topic"
         />
       </q-list>
     </q-drawer>
@@ -57,8 +61,8 @@
 
         <q-toolbar class="bg-primary text-white">
 
-          <q-toolbar-title>
-            amigos
+          <q-toolbar-title class="amibo">
+            Amigos
           </q-toolbar-title>
 
           <q-btn flat icon="close"
@@ -86,18 +90,6 @@
             <q-item-section>
               <p class="nomezinho"><b> {{feed.nome}} </b></p>
               <!-- <p><b> Descrição: </b>{{feed.texto}}</p> -->
-
-            </q-item-section>
-
-            <q-item-section>
-
-              <a href="http://localhost:8080/#/chat" class="text-green">
-                <q-btn
-                class="bg-green text-white"
-                icon="chat"
-                rounded
-                flat />
-              </a>
 
             </q-item-section>
 
@@ -157,7 +149,7 @@ const feeds = [{
 const linksList = [
   {
     title: 'Login',
-    caption: 'Book.Login',
+    caption: 'Login aqui',
     icon: 'school',
     link: '#/login'
 
@@ -165,7 +157,7 @@ const linksList = [
 
   {
     title: 'Configurações',
-    caption: 'Book.Config',
+    caption: 'Mudanças de tela e de conta',
     icon: 'more_horiz',
     link: 'http://localhost:8080/#/config'
 
@@ -173,7 +165,7 @@ const linksList = [
 
   {
     title: 'Home',
-    caption: 'Book.home',
+    caption: 'Tela principal',
     icon: 'home',
     link: 'http://localhost:8080/#/'
 
@@ -279,8 +271,9 @@ export default defineComponent({
   .nomezinho{
 
     font-size: 23px;
-    margin-right: 120px;
+    margin-right: 600px;
     margin-bottom: 0px;
+    font-family: redondinho;
 
   }
 
@@ -288,6 +281,37 @@ export default defineComponent({
   .menus{
 
     margin-left: 5%px;
+
+  }
+
+  .book{
+
+    font-family: redondinho;
+
+  }
+
+  .menu{
+
+    font-family: titulinho2;
+
+  }
+
+  .topic{
+
+    font-family: titulinho2;
+
+  }
+
+  .amibo{
+
+    font-family: titulinho1;
+
+  }
+
+  .vindo{
+
+    font-family: titulinho1;
+    font-size: 15px;
 
   }
 </style>
