@@ -139,9 +139,28 @@ export default defineComponent({
   },
 
   mounted () {
-    this.$axios.get('http://localhost:3000/usuario')
+
+  // this.$axios.post('https://teste-f22a1-default-rtdb.firebaseio.com/usuarios.json', {
+  //  "nomeInteiro":"Alex dos Santos",
+  //  "genero":"masculino",
+  //  "nick":"Quareco",
+  //   "senha":"alexGostoso",
+  //   "data": "06022002"
+
+  // })
+  // .then(function (response) {
+  //   console.log(response);
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
+
+    this.$axios.get('https://teste-f22a1-default-rtdb.firebaseio.com/usuarios/-N4UbNUHz8LXWAbRn91F.json')
       .then((res) => {
-        const dataNome = res.data[0].nome
+
+        console.log(res);
+
+        const dataNome = res.data[0].firstName
         console.log('data', dataNome)
         this.teste = dataNome
       })
