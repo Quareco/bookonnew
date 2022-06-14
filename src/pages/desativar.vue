@@ -2,7 +2,7 @@
 
   <div class="desativar">
 
-    <h1>Você realmente deseja desativar a sua conta?</h1>
+    <h5>Você realmente deseja desativar a sua conta?</h5>
 
     <p>Essa operação pode ser reversível, você poderá ativar a sua conta caso tente logar novamente</p>
 
@@ -39,9 +39,9 @@
 
       <q-card-section>
 
-        <q-btn rounded outlined label="Cancelar" size="11px" v-close-popup color="red" />
+        <q-btn rounded outlined class="cancelarr" label="Cancelar" size="11px" v-close-popup color="blue" />
 
-        <q-btn rounded outlined label="Prosseguir" size="11px" color="red" />
+        <q-btn rounded outlined class="prosseguir" label="Prosseguir" size="11px" color="blue" />
 
       </q-card-section>
 
@@ -76,7 +76,7 @@ export default {
 <style lang="scss">
 
 body{
-  background-color: $palete4;
+  background-color: $palete1;
 }
 
 h1{
@@ -92,14 +92,19 @@ p{
   font-family: textinho1;
   font-size: 25px;
 }
+///border-radius: 20px;
+//width: 30%;
+//margin-left: 35%;
+//margin-top: 50%;
 
-.btnDesativar{  
+.btnDesativar{
   margin-top: 12%;
   margin-bottom: 20%;
   border-radius: 20px;
   width: 30%;
   margin-left: 37%;
 }
+
 
 h3{
   color: #000000;
@@ -108,9 +113,23 @@ h3{
   font-family: textinho1;
   margin-top:-1%
 }
+.cancelarr{
+border-radius: 30px;
+width: 30%;
+margin-left: 38%;
+margin-top: -10%;
+
+}
+.prosseguir{
+ margin-top: -2%;
+border-radius: 50px;
+width: 30%;
+margin-left: 38%;
 
 
 
 
+
+}
 
 </style>

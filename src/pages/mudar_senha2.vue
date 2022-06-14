@@ -2,7 +2,7 @@
 
   <div class="deletar">
 
-    <h1>Bora mudar a senha</h1>
+    <h5>Bora mudar a senha</h5>
 
     <p>Insira a sua nova senha</p>
 
@@ -12,7 +12,7 @@
 
     <q-input rounded outlined v-model="text" label="Reconfirmar senha" :dense="dense" />
 
- <q-btn  rounded outlined label="Mudar" @click="confirm = true" type="submit" color="red" />
+ <q-btn  rounded outlined class="mudar" label="Mudar" @click="confirm = true" type="submit" color="blue" />
 
     <!-- http://localhost:8080/#/mudar_senha -->
 
@@ -22,7 +22,7 @@
       <q-card>
         <q-card-section class="row items-center">
 
-          <h3>Senha mudada com sucesso!</h3>
+          <h5>Senha mudada com sucesso!</h5>
 
         </q-card-section>
       </q-card>
@@ -52,3 +52,19 @@ export default {
 }
 
 </script>
+<style lang="scss">
+body {
+  background-color: $palete3;
+}
+
+.mudar {
+border-radius: 40px;
+  margin-left: 160px;
+  margin-top: 4px;
+text-shadow: 2px 2px 4px #000000
+}
+
+
+
+
+</style>

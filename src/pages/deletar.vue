@@ -2,13 +2,15 @@
 
   <div class="deletar">
 
-    <h1>Você realmente deseja deletar a sua conta?</h1>
+    <h3>Você realmente deseja deletar a sua conta?</h3>
 
-    <p>Essa operação é irreversível, então pense bem antes de fazer isso</p>
+    <p5>Essa operação é irreversível, então pense bem antes de fazer isso</p5>
 
-    <q-btn class="btnDeletar" label="Deletar" @click="pre = true" type="submit" color="red"/>
+
 
   </div>
+
+<q-btn class="btnDeletar" label="Deletar" @click="pre = true" type="submit" color="purple"/>
 
 <q-dialog  v-model="pre">
 
@@ -22,7 +24,7 @@
 
       <q-card-section>
 
-        <p> Se sim, insira a sua senha novamente </p>
+        <p6> Se sim, insira a sua senha novamente; </p6>
 
       </q-card-section>
 
@@ -46,9 +48,9 @@
 
       <q-card-section>
 
-        <q-btn class="btnCancelar" label="Cancelar" size="11px" v-close-popup  color="red"/>
+        <q-btn class="btnCancelar" label="Cancelar" size="11px" v-close-popup  color="purple"/>
 
-        <q-btn class="btnProsseguir" label="Prosseguir" size="11px" @click="deleter = true"   color="red"/>
+        <q-btn class="btnProsseguir" label="Prosseguir" size="11px" @click="deleter = true"   color="purple"/>
 
       </q-card-section>
 
@@ -58,7 +60,7 @@
 
   <!-- /////////////////////////////////////////////////////// -->
 
-<q-dialog  v-model="deleter" color="red">
+<q-dialog  v-model="deleter" color="purple">
 
     <q-card>
 
@@ -70,17 +72,17 @@
 
       <q-card-section>
 
-        <p>Você sempre vai ser bem vindo aqui caso deseje voltar</p>
+        <p6>Você sempre vai ser bem vindo aqui caso deseje voltar</p6>
 
       </q-card-section>
 
       <q-card-section>
 
-        <p> Se você realmente quer deletar a sua conta
+        <p6> Se você realmente quer deletar a sua conta
 
           digite "Eu quero deletar minha conta"
 
-          </p>
+          </p6>
 
       </q-card-section>
 
@@ -92,9 +94,9 @@
 
       <q-card-section>
 
-        <q-btn class="cancelar" label="Cancelar"  size="11px"  v-close-popup color="red" />
+        <q-btn class="cancelar" label="Cancelar"  size="11px"  v-close-popup color="purple" />
 
-        <q-btn class="deletar" type="submit" label="Deletar"  size="11px"  color="red"/>
+        <q-btn class="fimdeletar" type="submit" label="Deletar"  size="11px"  color="purple"/>
 
       </q-card-section>
 
@@ -125,33 +127,36 @@ p{
 }
 
 .btnDeletar{
-  margin-top: 12%;
+  margin-top: 150px;
   margin-bottom: 20%;
-  border-radius: 20px;
+  border-radius:  70px;
   width: 30%;
-  margin-left: 37%;
+  margin-left: 150px;
+  text-shadow: 2px 2px 4px #000000
 }
 
 .btnCancelar{
-  margin-top: 12%;
+  margin-top: 40px;
   margin-bottom: 20%;
-  border-radius: 20px;
-  width: 30%;
-  margin-left: 37%;
+  border-radius: 65px;
+  width: 40%;
+  margin-left:  110px;
+  text-shadow: 2px 2px 4px #000000
 }
 
 .btnProsseguir{
-  margin-top: 12%;
+  margin-top: -17%;
   margin-bottom: 20%;
-  border-radius: 20px;
-  width: 30%;
-  margin-left: 37%;
+  border-radius: 65px;
+  width: 40%;
+  margin-left: 110px;
+  text-shadow: 2px 2px 4px #000000
 }
 
 .really{
   color: #000000;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: textinho1;
 }
 
@@ -161,7 +166,21 @@ p{
   font-size: 30px;
   font-family: textinho1;
 }
+.cancelar{
+ width:40%;
+border-radius: 70px;
+margin-left: 110px;
+ margin-top: -40px;
+text-shadow: 2px 2px 4px #000000
+}
+.fimdeletar{
+  width:40%;
+border-radius: 70px;
+margin-left: 110px;
+ margin-top: -15px;
+text-shadow: 2px 2px 4px #000000
 
+}
 
 </style>
 

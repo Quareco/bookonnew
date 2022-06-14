@@ -16,7 +16,7 @@
           BookOn
         </q-toolbar-title>
 
-        <p class="vindo"> <div>Seja bem vindo Carlos
+        <p class="vindo"> <div>Seja bem-vindo Carlos
 
         <a href="http://localhost:8080/#/perfil">
 
@@ -129,7 +129,7 @@ import postService from 'src/FuncoesJson/services'
 const feeds = [{
 
   id: 1,
-  nome: "Pailhares",
+  nome: "Palhares",
   foto: "https://cdn.quasar.dev/img/boy-avatar.png",
   texto:"Quero ver você passar a minha pontuação"
 
@@ -140,15 +140,18 @@ const feeds = [{
   foto:"https://cdn.quasar.dev/img/boy-avatar.png",
   texto:"ababababab"
 
+}, {
+id: 2,
+  nome: "Joãozinho",
+  foto:"https://cdn.quasar.dev/img/boy-avatar.png",
+  texto:"ababababab"
+
 },
-
-
-
 ]
 
 const linksList = [
   {
-    title: 'Login',
+    title: 'Tela de Login',
     caption: 'Login aqui',
     icon: 'school',
     link: '#/login'
@@ -164,7 +167,7 @@ const linksList = [
   },
 
   {
-    title: 'Home',
+    title: 'Tela principal',
     caption: 'Tela principal',
     icon: 'home',
     link: 'http://localhost:8080/#/'
@@ -264,7 +267,7 @@ export default defineComponent({
   .fotinha1{
 
     font-size:70px;
-    margin-right: 60px;
+    margin-right: 40px;
 
   }
 
@@ -311,7 +314,7 @@ export default defineComponent({
   .vindo{
 
     font-family: titulinho1;
-    font-size: 15px;
+    font-size: 13px;
 
   }
 </style>
