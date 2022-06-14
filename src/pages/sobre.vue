@@ -35,13 +35,13 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
-  font-family: Comic, Helvetica, sans-serif;
+  font-family: textinho1;
   text-shadow: 2px 2px 4px #000000;
   margin-top:-1%;
 }
 
 p{
-  font-family: Arial;
+  font-family: textinho1;
   font-size: 25px;
 }
 

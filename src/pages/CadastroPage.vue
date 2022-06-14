@@ -113,7 +113,7 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: titulinho1;
   text-shadow: 2px 2px 4px #000000;
   margin-top: 5%;
 }

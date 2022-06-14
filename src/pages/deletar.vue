@@ -6,7 +6,7 @@
 
     <p>Essa operação é irreversível, então pense bem antes de fazer isso</p>
 
-    <q-btn label="Deletar" @click="pre = true"   type="submit" color="red"/>
+    <q-btn class="btnDeletar" label="Deletar" @click="pre = true" type="submit" color="red"/>
 
   </div>
 
@@ -16,7 +16,7 @@
 
       <q-card-section>
 
-        <h3>Você deseja deletar a sua conta?</h3>
+        <h3 class="really">Você deseja deletar a sua conta?</h3>
 
       </q-card-section>
 
@@ -46,9 +46,9 @@
 
       <q-card-section>
 
-        <q-btn label="Cancelar" size="11px" v-close-popup  color="red"/>
+        <q-btn class="btnCancelar" label="Cancelar" size="11px" v-close-popup  color="red"/>
 
-        <q-btn label="Prosseguir" size="11px" @click="deleter = true"   color="red"/>
+        <q-btn class="btnProsseguir" label="Prosseguir" size="11px" @click="deleter = true"   color="red"/>
 
       </q-card-section>
 
@@ -64,7 +64,7 @@
 
       <q-card-section>
 
-        <h2>Poxa, ficamos muito tristes por isso</h2>
+        <h2 class="quePena">Poxa, ficamos muito tristes por isso</h2>
 
       </q-card-section>
 
@@ -105,6 +105,65 @@
 
 </template>
 
+
+<style lang="scss">
+
+body{
+  background-color: $warning;
+}
+
+h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-family: textinho1;
+}
+
+p{
+  font-family: textinho1;
+  font-size: 25px;
+}
+
+.btnDeletar{
+  margin-top: 12%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 37%;
+}
+
+.btnCancelar{
+  margin-top: 12%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 37%;
+}
+
+.btnProsseguir{
+  margin-top: 12%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 37%;
+}
+
+.really{
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  font-family: textinho1;
+}
+
+.quePena{
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  font-family: textinho1;
+}
+
+
+</style>
 
 <script>
 import { ref } from 'vue'

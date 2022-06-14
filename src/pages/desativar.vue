@@ -6,7 +6,7 @@
 
     <p>Essa operação pode ser reversível, você poderá ativar a sua conta caso tente logar novamente</p>
 
-    <q-btn label="Desativar" @click="off = true" color="red" />
+    <q-btn class="btnDesativar" label="Desativar" @click="off = true" color="red" />
 
   </div>
 
@@ -41,7 +41,7 @@
 
         <q-btn rounded outlined label="Cancelar" size="11px" v-close-popup color="red" />
 
-        <q-btn ounded outlined label="Prosseguir" size="11px" color="red" />
+        <q-btn rounded outlined label="Prosseguir" size="11px" color="red" />
 
       </q-card-section>
 
@@ -72,3 +72,45 @@ export default {
 }
 
 </script>
+
+<style lang="scss">
+
+body{
+  background-color: $palete4;
+}
+
+h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  font-family: textinho1;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top:-1%
+}
+
+p{
+  font-family: textinho1;
+  font-size: 25px;
+}
+
+.btnDesativar{  
+  margin-top: 12%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 37%;
+}
+
+h3{
+  color: #000000;
+  text-align: center;
+  font-size: 35px;
+  font-family: textinho1;
+  margin-top:-1%
+}
+
+
+
+
+
+</style>

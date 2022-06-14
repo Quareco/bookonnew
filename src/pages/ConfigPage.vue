@@ -62,7 +62,7 @@
           <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/sobre">
 
             <q-item-section> <q-icon class="isobre" name="contact_support" /> </q-item-section>
-            <q-item-section><p> Sobre </p></q-item-section>
+            <q-item-section><p class="sobre"> Sobre </p></q-item-section>
 
           </q-item>
 
@@ -120,6 +120,10 @@ p{
 
   font-size: 28px;
 
+}
+
+.sobre{
+  font-family: titulinho2;
 }
 
 </style>
