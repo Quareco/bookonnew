@@ -113,6 +113,15 @@ h3{
   font-family: textinho1;
   margin-top:-1%
 }
+
+h5{
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  font-family: textinho1;
+  margin-top: 8%;
+}
+
 .cancelarr{
 border-radius: 30px;
 width: 30%;
@@ -125,11 +134,6 @@ margin-top: -10%;
 border-radius: 50px;
 width: 30%;
 margin-left: 38%;
-
-
-
-
-
 }
 
 </style>

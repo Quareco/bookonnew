@@ -4,7 +4,7 @@
 
     <h3>Você realmente deseja deletar a sua conta?</h3>
 
-    <p5>Essa operação é irreversível, então pense bem antes de fazer isso</p5>
+    <p5 class="mainText">Essa operação é irreversível, então pense bem antes de fazer isso</p5>
 
 
 
@@ -24,7 +24,7 @@
 
       <q-card-section>
 
-        <p6> Se sim, insira a sua senha novamente; </p6>
+        <p6 class="really1"> Se sim, insira a sua senha novamente; </p6>
 
       </q-card-section>
 
@@ -72,13 +72,13 @@
 
       <q-card-section>
 
-        <p6>Você sempre vai ser bem vindo aqui caso deseje voltar</p6>
+        <p6 class="hope">Você sempre vai ser bem vindo aqui caso deseje voltar</p6>
 
       </q-card-section>
 
       <q-card-section>
 
-        <p6> Se você realmente quer deletar a sua conta
+        <p6 class="quePena1"> Se você realmente quer deletar a sua conta
 
           digite "Eu quero deletar minha conta"
 
@@ -108,80 +108,112 @@
 </template>
 
 
-<style lang="scss">
-
-body{
-  background-color: $warning;
+<style lang="scss" > body {
+    background-color: $warning;
 }
 
-h1{
-  color: #ffffff;
-  text-align: center;
-  font-size: 40px;
-  font-family: textinho1;
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-family: textinho1;
 }
 
-p{
-  font-family: textinho1;
-  font-size: 25px;
+h3 {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    font-family: textinho1;
 }
 
-.btnDeletar{
-  margin-top: 150px;
-  margin-bottom: 20%;
-  border-radius:  70px;
-  width: 30%;
-  margin-left: 150px;
-  text-shadow: 2px 2px 4px #000000
+p {
+    font-family: textinho1;
+    font-size: 25px;
 }
 
-.btnCancelar{
-  margin-top: 40px;
-  margin-bottom: 20%;
-  border-radius: 65px;
-  width: 40%;
-  margin-left:  110px;
-  text-shadow: 2px 2px 4px #000000
+.mainText {
+    font-family: textinho1;
+    font-size: 25px;
 }
 
-.btnProsseguir{
-  margin-top: -17%;
-  margin-bottom: 20%;
-  border-radius: 65px;
-  width: 40%;
-  margin-left: 110px;
-  text-shadow: 2px 2px 4px #000000
+.btnDeletar {
+    margin-top: 70px;
+    margin-bottom: 20%;
+    border-radius: 70px;
+    width: 30%;
+    margin-left: 130px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.really{
-  color: #000000;
-  text-align: center;
-  font-size: 25px;
-  font-family: textinho1;
+.btnCancelar {
+    margin-top: -1%;
+    margin-bottom: 20%;
+    border-radius: 65px;
+    width: 40%;
+    margin-left: 85px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.quePena{
-  color: #000000;
-  text-align: center;
-  font-size: 30px;
-  font-family: textinho1;
-}
-.cancelar{
- width:40%;
-border-radius: 70px;
-margin-left: 110px;
- margin-top: -40px;
-text-shadow: 2px 2px 4px #000000
-}
-.fimdeletar{
-  width:40%;
-border-radius: 70px;
-margin-left: 110px;
- margin-top: -15px;
-text-shadow: 2px 2px 4px #000000
-
+.btnProsseguir {
+    margin-top: -15%;
+    margin-bottom: 20%;
+    border-radius: 65px;
+    width: 40%;
+    margin-left: 85px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
+.really {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    font-family: textinho1;
+}
+
+.really1 {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 35px;
+    font-family: textinho1;
+}
+
+.quePena {
+    color: #000000;
+    text-align: center;
+    font-size: 35px;
+    font-family: textinho1;
+}
+
+.hope {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 25px;
+    font-family: textinho1;
+}
+
+.quePena1 {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 25px;
+    font-family: textinho1;
+}
+
+.cancelar {
+    width: 40%;
+    border-radius: 70px;
+    margin-left: 85px;
+    margin-top: -40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.fimdeletar {
+    width: 40%;
+    border-radius: 70px;
+    margin-left: 85px;
+    margin-top: -5px;
+    text-shadow: 2px 2px 4px #000000;
+}
 </style>
 
 <script>
