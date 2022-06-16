@@ -99,9 +99,39 @@ export default defineComponent({
 
     }
 
-  }
+  },
 
+  mounted () {
 
+  // this.$axios.post('https://bookon-3b2c1-default-rtdb.firebaseio.com/cadastro.json', {
+  //  "nomeInteiro":"Matheus Takashi Inamine de Oliveira",
+  //  "data": "13032002",
+  //  "genero":"masculino",
+  //  "nick":"Takashi",
+  //  "email":"matheusinamine@gmail.com",
+  //  "confirmarEmail":"matheusinamine@gmail.com",
+  //  "senha":"123456",
+  //  "confirmarSenha":"123456",
+  
+
+  // })
+  // .then(function (response) {
+  //   console.log(response);
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
+
+    this.$axios.get('https://teste-f22a1-default-rtdb.firebaseio.com/usuarios/-N4UbNUHz8LXWAbRn91F.json')
+      .then((res) => {
+
+        console.log(res);
+
+        const dataNome = res.data[0].firstName
+        console.log('data', dataNome)
+        this.teste = dataNome
+      })
+  },
 
 
 

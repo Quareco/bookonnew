@@ -54,7 +54,33 @@ export default defineComponent({
 
     }
 
-  }
+  },
+
+  mounted () {
+
+  // this.$axios.get('https://bookon-3b2c1-default-rtdb.firebaseio.com/login.json', {
+  //  "email":"matheusinamine@gmail.com",
+  //  "senha":"123456"
+  
+
+  // })
+  // .then(function (response) {
+  //   console.log(response);
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
+
+    this.$axios.get('https://teste-f22a1-default-rtdb.firebaseio.com/usuarios/-N4UbNUHz8LXWAbRn91F.json')
+      .then((res) => {
+
+        console.log(res);
+
+        const dataNome = res.data[0].firstName
+        console.log('data', dataNome)
+        this.teste = dataNome
+      })
+  },
 
 })
 </script>

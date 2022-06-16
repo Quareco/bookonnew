@@ -140,12 +140,12 @@ export default defineComponent({
 
   mounted () {
 
-  // this.$axios.post('https://teste-f22a1-default-rtdb.firebaseio.com/usuarios.json', {
-  //  "nomeInteiro":"Alex dos Santos",
+  // this.$axios.post('https://bookon-3b2c1-default-rtdb.firebaseio.com/usuarios.json', {
+  //  "nomeInteiro":"Matheus Takashi Inamine de Oliveira",
   //  "genero":"masculino",
-  //  "nick":"Quareco",
-  //   "senha":"alexGostoso",
-  //   "data": "06022002"
+  //  "nick":"Takashi",
+  //   "senha":"123456",
+  //   "data": "13032002"
 
   // })
   // .then(function (response) {
