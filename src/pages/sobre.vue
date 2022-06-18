@@ -35,12 +35,13 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 50px;
-  font-family: textinho1;
+  font-family: redondinho;
   text-shadow: 2px 2px 4px #000000;
   margin-top:-1%;
 }
 
 p{
+  text-align: center;
   font-family: textinho1;
   font-size: 25px;
 }

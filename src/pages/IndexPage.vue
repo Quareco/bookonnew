@@ -89,34 +89,32 @@
 import { defineComponent, onMounted } from 'vue'
 import postService from 'src/FuncoesJson/services'
 
-const feeds = [{
+const feeds = [
+    {
+        id: 1,
+        titulo: "Palhares bateu um novo recorde",
+        foto: "https://todaatual.com/wp-content/uploads/584e2a560e84bdb9216bdee4f43d9e93.jpg",
+        texto: "Quero ver você passar a minha pontuação",
+        pontuacao: 5060
 
-  id: 1,
-  titulo: "Palhares bateu um novo recorde",
-  foto: "https://todaatual.com/wp-content/uploads/584e2a560e84bdb9216bdee4f43d9e93.jpg",
-  texto:"Quero ver você passar a minha pontuação",
-  pontuacao: 5060
+    },
 
-}, {
+    {
+        id: 2,
+        titulo: "Caio Silva",
+        foto: "https://cdn.quasar.dev/img/avatar.png",
+        texto: "joguei pra caramba e me sai muito bem Uhuuuul",
+        pontuacao: 987941
+    },
 
-  id: 2,
-  titulo: "Caio Silva",
-  foto:"https://cdn.quasar.dev/img/avatar.png",
-  texto:"joguei pra caramba e me sai muito bem Uhuuuul",
-  pontuacao: 987941
-
-}, {
- id: 2,
-  titulo: "Joãozinho",
-  foto:"https://reviews.tn/wp-content/uploads/2021/11/Photo-De-Profil-pour-discord-Style.jpg",
-  texto:"joguei pra caramba e me sai muito bem Uhuuuul",
-  pontuacao: 98794
-
-
-
-
-
-}
+    {
+        id: 2,
+        titulo: "Joãozinho",
+        foto: "https://reviews.tn/wp-content/uploads/2021/11/Photo-De-Profil-pour-discord-Sty" +
+                "le.jpg",
+        texto: "joguei pra caramba e me sai muito bem Uhuuuul",
+        pontuacao: 98794
+    }
 
 ]
 
@@ -165,31 +163,24 @@ export default defineComponent({
 <style lang="scss">
 
 body {
-
   background-color: #17e696;
-
 }
 
 h1 {
-
   color: #8A2BE2;
   text-align: center;
   font-size: 50px;
   text-shadow: 2px 2px 4px #0e0d0d;
-
 }
 
 .materias{
-
   background-color: #e6e9ee;
   margin-left: 6%;
   margin-right: 6%;
   padding-top: 4%;
-
 }
 
 .porco{
-
   background-color: 	#e6e9ee;
   margin-top: 20px;
   margin-left: 2%;
@@ -197,59 +188,43 @@ h1 {
   border-radius: 10px;
   padding: 5%;
   margin-bottom: 10%;
-
 }
 
 .fotinha{
-
   font-size:80px;
   margin-left: 15%;
-
 }
 
 .pontu{
-
   margin-top: 5%;
   font-size: 15px;
   font-family: titulinho2;
-
-
 }
 
 .labelsinha{
-
   font-size: 16px;
   font-family: titulinho2;
-
 }
 
 .textinho{
-
   font-size: 15px;
   margin-top:3px;
   font-family: titulinho1;
-
 }
 
 .oq{
-
+  color: #e6e9ee;
   font-family: redondinho;
-
-
 }
 
 .num{
-
   font-size: 15px;
   font-family: titulinho1;
-
 }
 
 .jogado{
-
   font-family: titulinho1;
   text-align: center;
-
 }
 
 </style>

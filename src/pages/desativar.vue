@@ -117,9 +117,10 @@ h3{
 h5{
   color: #ffffff;
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   font-family: textinho1;
   margin-top: 8%;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .cancelarr{

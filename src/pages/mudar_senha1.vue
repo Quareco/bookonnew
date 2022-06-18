@@ -12,8 +12,7 @@
               <q-icon
                 :name="senhaLogin ? 'visibility_off' : 'visibility'"
                 class="cursor-pointer"
-                @click="senhaLogin = !senhaLogin"
-              />
+                @click="senhaLogin = !senhaLogin"/>
             </template>
           </q-input>
 
@@ -22,27 +21,39 @@
   </div>
 
 </template>
+
 <style lang="scss">
-  body {
-  background-color: $palete3;
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 55px;
+    font-family: textinho1;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.q-input{
-  border-radius: 30px;
-border-radius: 50px;
-width: 90%;
-margin-left: 2%;
-
+p {
+    text-align: center;
+    font-family: textinho1;
+    font-size: 25px;
 }
 
-
-
-
-.proximo{
-border-radius: 100px;
-width: 30%;
-margin-left: 32%;
-margin-top: 20%;
+body {
+    background-color: $palete3;
 }
 
+.q-input {
+    border-radius: 30px;
+    border-radius: 50px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #ffffff;
+}
+
+.proximo {
+    border-radius: 100px;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20%;
+}
 </style>
