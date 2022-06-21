@@ -48,7 +48,7 @@
                 <img src="https://cdn.quasar.dev/img/boy-avatar.png"></q-avatar>
             </q-item-section>
 
-            <div style="margin-top:-8%; margin-left:25%;  ;  font-size:4px;">
+            <div class="av" style="margin-top:-8%; margin-left:0%;  ;  font-size:4px;">
                 <h6>
                     Carlos Gomes Barbosa, 22
                     <q-item-section side="side" top="top"></q-item-section>
@@ -56,13 +56,35 @@
 
                 <q-item-section>
 
-                    <q-item-label caption="caption">Tenho 22 ano// Brasileiro (a) // Estudo na Camargo Aranha
+                    <q-item-label caption="caption">Sobre Mim:
                     </q-item-label>
                 </q-item-section>
 
             </div>
 
         </div>
+        <section>
+        <q-item clickable class="card" v-ripple>
+        <q-item-section avatar>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+          </q-avatar>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label lines="1">Você bateu um novo recorde !</q-item-label>
+          <q-item-label caption lines="2">
+            <span class="text-weight-bold">Pontuação: 4090</span>
+            
+          </q-item-label>
+        </q-item-section>
+
+        <q-item-section side down>
+          1 min ago
+        </q-item-section>
+      </q-item>
+      </section>
+    
     </template>
 
     <script>
@@ -101,6 +123,21 @@
         .q-card {
             background-color: #d9d9d9;
             font-family: Arial;
+        }
+
+        .av{
+            background-color: 	#e6e9ee;
+            border-radius: 10px;            
+        }
+
+        .card{
+            background-color: 	#e6e9ee;
+            margin-top: 20px;
+            margin-left: 2%;
+            margin-right: 1%;
+            border-radius: 10px;
+            padding: 5%;
+            margin-bottom: 10%;
         }
     </style>
 
