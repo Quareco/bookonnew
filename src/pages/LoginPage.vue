@@ -33,19 +33,7 @@
         <q-btn to="/cad" class="cadastro" label="Não tem uma conta ainda? Se cadastre aqui" color="primary"/>
 
         </div>
-
-     <div class="q-pa-md">
-    <div class="q-gutter-y-md column">
-        <q-rating
-            class="avaliacao"
-            v-model="ratingModel"
-            size="3.5em"
-            icon="star_border"
-            icon-selected="star"/>
-
-    </div>
-</div>
-
+        
        <!-- <a href="http://localhost:8080/#/cad" class="cadst" >Não tem uma conta ainda? Se cadastre aqui</a> -->
 
     </q-page>
@@ -63,7 +51,6 @@ export default defineComponent({
 
       password: ref(''),
       senhaLogin: ref(true),
-      ratingModel: ref(3)
     }
 
   }
@@ -112,11 +99,6 @@ p {
 
   font-family: redondinho;
 
-}
-
-.avaliacao{
-  color: $primary;
-  margin-left: 15%;
 }
 
 </style>
