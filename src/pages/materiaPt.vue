@@ -1,12 +1,22 @@
 <template>
 
-  <div>
+  <div class="Portugues" style="margin-top:5%; margin-left:32%;">
+                <p>
+                    Português </p>
+                </div>
 
-    <h1>Português</h1>
 
-  </div>
 
-  <h3>Nossos jogos</h3>
+
+
+
+    <div class="nossos" style="margin-top:5%; margin-left:30%;">
+                <p>
+                    Nossos jogos </p>
+                </div>
+
+
+
 
   <div>
 
@@ -14,12 +24,12 @@
 
       <q-card>
 
-        <q-parallax
 
-        src="https://cdn.quasar.dev/img/parallax1.jpg"
-        :height="150"
+    <img :src="jogo.foto">
 
-        />
+
+
+
 
         <q-card-section>
 
@@ -55,18 +65,18 @@ import { defineComponent } from 'vue'
   const jogos = [{
 
     id: 1,
-    nome: "Cadê as letras?",
-    desc: "Morbi aliquam libero vitae orci malesuada pulvinar Vestibulum sodales ullamcorper imperdiet. Suspendisse dignissim, mi at eleifend porta, justo augue dapibus velit, sollicitudin pulvinar mauris odio non est",
+    nome: "Jornada das Vogais",
+    desc: "Viaje pelo o mundo procurando as vogais perdias de uma vila antiga, forme palavras, ajude os moradores, e salve a vila",
     pont: 6565656,
-    // img: "https://cdn.quasar.dev/img/parallax1.jpg"
+     foto:"https://c4.wallpaperflare.com/wallpaper/482/225/313/pixels-pixel-art-video-games-fez-wallpaper-preview.jpg"
 
   },{
 
     id: 2,
-    nome: "Teste",
-    desc: "Morbi aliquam libero vitae orci malesuada pulvinar Vestibulum sodales ullamcorper imperdiet. Suspendisse dignissim, mi at eleifend porta, justo augue dapibus velit, sollicitudin pulvinar mauris odio non est",
+    nome: "Problemas de Socialização",
+    desc: "Clara tem problemas em socializar e em conversar com pessoas, ajude ela a montar palavras e confessar para a sua paixão",
     pont: 656,
-    // img: "https://cdn.quasar.dev/img/parallax1.jpg"
+    foto: "https://external-preview.redd.it/nxHch4yftK-zxTfmolK1XT64nXYgyQ4-odriLqbECXM.png?width=640&crop=smart&format=pjpg&auto=webp&s=1bfa9e23775d5c9a66a4dc17205246343d09f37b"
 
   }]
 
@@ -85,3 +95,20 @@ import { defineComponent } from 'vue'
   })
 
 </script>
+<style lang="scss">
+
+body {
+  background-color: #74098a;
+}
+.nossos{
+font-family:textinho1;
+color: #ff9a00;
+font-size: 30px;
+}
+.Portugues{
+font-family:textinho1;
+color: #ff9a00;
+font-size: 35px;
+
+}
+</style>

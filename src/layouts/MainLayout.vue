@@ -16,13 +16,13 @@
           BookOn
         </q-toolbar-title>
 
-        <p class="vindo"> <div>Seja bem-vindo Carlos
+        <p class="vindo"> <div> Bem-vindo Carlos
 
         <a href="http://localhost:8080/#/perfil">
 
           <q-avatar>
 
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png"/>
+            <img src="https://i.pinimg.com/originals/36/3f/e3/363fe367184cacc4e7cdba0094510a9a.png"/>
 
           </q-avatar>
 

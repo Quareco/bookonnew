@@ -62,7 +62,7 @@
           <q-item clickable v-ripple tag="a" href="http://localhost:8080/#/sobre">
 
             <q-item-section> <q-icon class="isobre" name="contact_support" /> </q-item-section>
-            <q-item-section><p class="sobre"> Sobre </p></q-item-section>
+            <q-item-section><p class="sobre"> Sobre  </p></q-item-section>
 
           </q-item>
 
@@ -87,7 +87,7 @@ export default defineComponent({
 <style lang="scss">
 
 body{
-  background-color: #f6f7d7;
+  background-color: #dde0ba;
 }
 
 p{
@@ -118,12 +118,13 @@ p{
 
 .isobre{
 
-  font-size: 28px;
+  font-size: 10px;
 
 }
 
 .sobre{
   font-family: titulinho2;
+  font-size: 18px;
 }
 
 </style>

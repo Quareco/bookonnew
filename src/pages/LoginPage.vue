@@ -1,7 +1,7 @@
 <template>
     <q-page>
-      <div>
-        <q-img src="../assets/bookonlogo(transparente).png"/>
+      <div class="bookplay">
+        <q-img src="https://i.imgur.com/0CcuCPB.png"/>
       </div>
         <h1 class="bem">Seja Bem-Vindo</h1>
 
@@ -33,7 +33,7 @@
         <q-btn to="/cad" class="cadastro" label="Não tem uma conta ainda? Se cadastre aqui" color="primary"/>
 
         </div>
-        
+
        <!-- <a href="http://localhost:8080/#/cad" class="cadst" >Não tem uma conta ainda? Se cadastre aqui</a> -->
 
     </q-page>
@@ -98,6 +98,11 @@ p {
 .bem{
 
   font-family: redondinho;
+
+}
+.bookplay{
+margin-top: 25%;
+ border-radius: 10px;
 
 }
 

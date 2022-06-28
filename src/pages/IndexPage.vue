@@ -23,23 +23,26 @@
 
               <q-avatar>
 
-                <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                <img src="https://img.freepik.com/free-vector/empty-opened-book-pixel-art-style_475147-1505.jpg">
 
               </q-avatar>
 
             </q-item-section>
 
-            <q-item-section>Exercício 4 de português - Consoantes</q-item-section>
+            <q-item-section>Exercício 1 de português - Consoantes</q-item-section>
 
           </q-item>
 
           <q-separator />
 
-          <q-item clickable v-ripple>
-
+         <q-item clickable v-ripple>
             <q-item-section avatar>
 
-              <q-avatar rounded color="primary" text-color="white" icon="book" />
+              <q-avatar>
+
+                <img src="https://img.myloview.com.br/posters/mathematics-pi-number-two-plus-two-example-math-pixel-art-icon-knitted-design-design-for-logo-stickers-web-mobile-app-8-bit-sprites-isolated-vector-illustration-700-250129086.jpg">
+
+              </q-avatar>
 
             </q-item-section>
 
@@ -93,7 +96,7 @@ const feeds = [
     {
         id: 1,
         titulo: "Palhares bateu um novo recorde",
-        foto: "https://todaatual.com/wp-content/uploads/584e2a560e84bdb9216bdee4f43d9e93.jpg",
+        foto: "https://opgg-static.akamaized.net/images/profile_icons/profileIcon4204.jpg?image=q_auto&image=q_auto,f_webp,w_auto&v=1654157118862",
         texto: "Quero ver você passar a minha pontuação",
         pontuacao: 5060
 
@@ -101,18 +104,18 @@ const feeds = [
 
     {
         id: 2,
-        titulo: "Caio Silva",
-        foto: "https://cdn.quasar.dev/img/avatar.png",
+        titulo: "Joãozinho",
+        foto: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b0dd7779-62ce-46e3-bae4-2086001edf0f/deqn7de-2b285cb2-b52b-4cf6-8adc-d6f71a36cf19.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IwZGQ3Nzc5LTYyY2UtNDZlMy1iYWU0LTIwODYwMDFlZGYwZlwvZGVxbjdkZS0yYjI4NWNiMi1iNTJiLTRjZjYtOGFkYy1kNmY3MWEzNmNmMTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.320ZnffXCF74C7Osh8c0HlEuS-LDx31DqIbPPwar3Po",
         texto: "joguei pra caramba e me sai muito bem Uhuuuul",
         pontuacao: 987941
     },
 
     {
         id: 2,
-        titulo: "Joãozinho",
-        foto: "https://reviews.tn/wp-content/uploads/2021/11/Photo-De-Profil-pour-discord-Sty" +
-                "le.jpg",
-        texto: "joguei pra caramba e me sai muito bem Uhuuuul",
+        titulo: "Bruninha",
+        foto: "https://i.pinimg.com/originals/76/c3/90/76c39028d43598532fc845d8ce1f151e.png",
+
+        texto: "De boa na lagoa",
         pontuacao: 98794
     }
 
@@ -163,7 +166,7 @@ export default defineComponent({
 <style lang="scss">
 
 body {
-  background-color: #17e696;
+  background-color: #e70fb1;
 }
 
 h1 {
