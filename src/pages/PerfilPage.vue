@@ -2,7 +2,7 @@
 
     <div class="q-pa-md">
 
-        <q-img src="https://cdn.quasar.dev/img/parallax1.jpg" style="height: 180px">
+        <q-img src="../assets/gaming.jpeg" style="height: 180px">
             <q-menu touch-position="touch-position" context-menu="context-menu">
                 <q-list dense="dense" style="min-width: 180px">
                     <q-item clickable="clickable" v-close-popup="v-close-popup">
@@ -56,7 +56,7 @@
 
                 <q-item-section>
 
-                    <q-item-label caption="caption">Sobre Mim:
+                    <q-item-label caption="caption">Sobre Mim: Gosto de aventuras e de um melhor aprendizado.
                     </q-item-label>
                 </q-item-section>
 
@@ -75,7 +75,7 @@
           <q-item-label lines="1">Você bateu um novo recorde !</q-item-label>
           <q-item-label caption lines="2">
             <span class="text-weight-bold">Pontuação: 4090</span>
-            
+
           </q-item-label>
         </q-item-section>
 
@@ -84,7 +84,7 @@
         </q-item-section>
       </q-item>
       </section>
-    
+
     </template>
 
     <script>
@@ -127,7 +127,7 @@
 
         .av{
             background-color: 	#e6e9ee;
-            border-radius: 10px;            
+            border-radius: 10px;
         }
 
         .card{
